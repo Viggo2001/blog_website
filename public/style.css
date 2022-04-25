@@ -1,0 +1,136 @@
+* {
+    /* background-color: rgb(226, 226, 226); */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-wrapper {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: rgb(83, 83, 131);
+    color: white;
+    position: fixed;
+    width: 100%;
+}
+
+main {
+    padding-top: 100px;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: grid;
+}
+
+.all-blogs {
+    width: 50%;
+}
+
+.all-blogs a{
+    text-decoration: none;
+    color: #000;
+}
+
+.logo {
+    margin-left: 120px;
+    padding: 10px;
+}
+
+.logo a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo h2 {
+    border: solid white 1px;
+    width: fit-content;
+    padding: 5px;
+}
+
+.links ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    margin-right: 120px;
+}
+
+.links ul li {
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.links ul li a {
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+
+#sign a {
+    background-color: chocolate;
+    padding: 5px;
+    border-radius: 3px;
+}
+
+.blog-title {
+    background-color: rgb(204, 204, 204);
+    padding: 20px;
+    border-radius: 3px;
+}
+
+
+/* CREATE BLOG */
+
+.heading-create {
+    text-align: center;
+    margin-bottom: 50px;
+    font-weight: lighter;
+}
+
+.post form {
+    display: grid;
+    grid-template-columns: auto;
+    width: 500px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.post input {
+    margin-bottom: 20px;
+    padding: 10px;
+    outline-color: rgb(83, 83, 131);
+}
+
+.post textarea {
+    margin-bottom: 20px;
+    padding: 10px;
+    resize: none;
+    outline-color: rgb(83, 83, 131);
+}
+
+.post form button {
+    width: 20%;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: rgb(83, 83, 131);
+    border: none;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+
+
+/* DETAILS PAGE */
+
+.delete-btn {
+    margin-top: 30px;
+}
+
+.delete-btn a {
+    background-color: maroon;
+    color: white;
+    padding: 8px;
+    border: solid black 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %> 
+
+<body>
+    
+    <header>
+        <%- include('./partials/nav') %> 
+    </header>
+
+    <main>
+
+        <h1 style="font-weight: normal;" >All Blogs</h1>
+
+        <% if (blogs.length > 0) { %>
+
+            <% blogs.forEach((element, index, array) => { %>
+                
+                <br>
+                <div class="all-blogs">
+                    
+                    <a href="/blogs/details/<%= element._id %>">
+                        <div class="blog-title">
+                            <h2> <%= element.title %> </h2>
+                            <p> <%= element.description %> </p>
+                        </div>
+                    </a>
+                </div>
+    
+            <% }); %>
+
+        <% } else { %>
+            <p>No blogs posted yet</p>
+        <% } %>
+
+        
+
+    </main>
+
+    <br><br><br>
+</body>
+</html>

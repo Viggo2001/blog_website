@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<%- include('./partials/head') %> 
+
+<body>
+    
+    <header>
+        <%- include('./partials/nav') %> 
+    </header>
+
+    <main>
+
+        <div class="heading-create">
+            <h2 style="font-weight: normal;">Post a Blog</h2>
+        </div>
+
+        <div class="post">
+            <form action="/blogs/post" method="POST">
+                <label for="">Title</label>
+                <input type="text" name="title" id="" required>
+                <label for="">Description</label>
+                <input type="text" name="description" id="" required>
+                <label for="">Content</label>
+                <textarea name="content" id="" cols="30" rows="10" required></textarea>
+                <button>CREATE</button>
+            </form>
+        </div>
+
+    </main>
+
+</body>
+</html>
